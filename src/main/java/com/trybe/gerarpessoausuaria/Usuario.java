@@ -2,8 +2,8 @@ package com.trybe.gerarpessoausuaria;
 
 public class Usuario extends Pessoa {
 
-  public Usuario() {
-
+  public Usuario(String nome, String sobrenome) {
+    super(nome, sobrenome);
   }
 
   /**
@@ -11,6 +11,6 @@ public class Usuario extends Pessoa {
    *
    */
   public String getUsuario() {
-
+    return nome + "." + sobrenome;
   }
 }
