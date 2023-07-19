@@ -11,6 +11,9 @@ public class Usuario extends Pessoa {
    *
    */
   public String getUsuario() {
+    if (nome == null || nome.isEmpty() || sobrenome == null || sobrenome.isEmpty()) {
+      return "Usuário inválido";
+    }
     return nome + "." + sobrenome;
   }
 }
